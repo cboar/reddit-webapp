@@ -1,11 +1,13 @@
 mixin item(score, title, url, thumb)
-	.list-score= score
-	.list-content
-		a(href=url)
-			img.list-thumb(src=thumb)
-			.list-title= title
+	li
+		.list-score= score
+		.list-content
+			a(href=url)
+				img.list-thumb(src=thumb)
+				.list-title= title
 
 head
 	title reddit
 body
-	+item(1000, "Test item", "test.com", "none")
+	ul#main-container
+		+item(1000, "Test item", "test.com", "none")

@@ -7,11 +7,12 @@ const index = pug.compileFile("index.pug")
 
 app.get("/", function(req, output){
 
-	const url = "https://reddit.com/hot.json?limit=25"
+	const url = "https://reddit.com/hot.json?limit=10"
 	request(url, function(err, res, body){
 
-		const json = JSON.parse(body)
-		const html = index()
+		const data = JSON.parse(body).data
+		const items = data.children.map(a => a.data)
+		const html = index({ items: items })
 		output.send(html)
 
 	})

@@ -10,4 +10,5 @@ head
 	title reddit
 body
 	ul#main-container
-		+item(1000, "Test item", "test.com", "none")
+		each i in items
+			+item(i.score, i.title, i.url, i.thumbnail)

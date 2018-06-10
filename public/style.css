@@ -1,0 +1,69 @@
+@font-face {
+	font-family:'DDG_ProximaNova';
+	src:url("font/ProximaNova-Reg-webfont.woff") format("woff"),url("font/ProximaNova-Reg-webfont.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal
+}
+@font-face {
+	font-family:'DDG_ProximaNova';
+	src:url("font/ProximaNova-Light-webfont.woff") format("woff"),url("font/ProximaNova-Light-webfont.ttf") format("truetype");
+	font-weight:300;
+	font-style:normal
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #222;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: #555;
+}
+
+#main-container {
+	list-style-type: none;
+	padding: 16px;
+	margin: 0 auto;
+	width: 95%;
+}
+
+.list-score {
+	display: inline-block;
+	height: 48px;
+	width: 80px;
+	border-radius: 6px 0 0 6px;
+	vertical-align: middle;
+	background-color: #333;
+}
+.list-content {
+	display: inline-block;
+	width: 85%;
+	border-radius: 8px;
+	background-color: #333;
+	box-shadow: 0 0 16px -8px black;
+	margin: 8px 0 0 0;
+	padding: 8px;
+}
+.list-thumb {
+	vertical-align: middle;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-color: #222;
+	border: 4px solid #222;
+	border-radius: 8px;
+}
+.list-title {
+	display: inline-block;
+	max-width: 85%;
+	font-size: 16pt;
+	padding: 0 0 0 16px;
+	font-family: DDG_ProximaNova;
+}
+.list-title:hover {
+	text-decoration: underline;
+}

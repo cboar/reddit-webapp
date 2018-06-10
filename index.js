@@ -5,6 +5,7 @@ const app = express()
 
 const index = pug.compileFile("index.pug")
 
+app.use(express.static("public"))
 app.get("/", function(req, output){
 
 	const url = "https://reddit.com/hot.json?limit=10"

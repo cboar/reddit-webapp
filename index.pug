@@ -5,9 +5,12 @@ mixin item(index, a)
 	.list-content
 		a(href=a.url)
 			img.list-thumb(src=a.thumbnail)
-			.list-info
+		.list-info
+			a(href=a.url)
 				.list-title= a.title
-				.list-domain= "("+a.domain+")"
+			if a.link_flair_text
+				.list-flair= a.link_flair_text
+			.list-domain= "("+a.domain+")"
 
 head
 	title reddit

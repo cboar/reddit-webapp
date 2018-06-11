@@ -24,7 +24,7 @@ a {
 	text-decoration: none;
 }
 a:visited {
-	color: #555;
+	color: #666;
 }
 
 #main-container {
@@ -63,7 +63,7 @@ a:visited {
 	border-radius: 8px;
 	background-color: #333;
 	box-shadow: 0 0 16px -8px black;
-	margin: 8px 0 0 0;
+	margin: 5px 0 0 0;
 	padding: 8px;
 	width: 85%;
 }
@@ -74,10 +74,22 @@ a:visited {
 	padding: 0 0 0 16px;
 }
 .list-title {
+	display: inline;
 	font-size: 16pt;
 }
 .list-domain {
+	display: inline;
+	margin-left: 8px;
 	font-size: 10pt;
+	color: #666;
+}
+.list-flair {
+	display: inline;
+	font-size: 12pt;
+	margin-left: 8px;
+	padding: 2px 8px 2px 8px;
+	border-radius: 4px;
+	background-color: #555;
 }
 .list-title:hover {
 	text-decoration: underline;

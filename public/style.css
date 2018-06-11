@@ -1,11 +1,11 @@
 @font-face {
-	font-family:'DDG_ProximaNova';
+	font-family:"DDG_ProximaNova";
 	src:url("font/ProximaNova-Reg-webfont.woff") format("woff"),url("font/ProximaNova-Reg-webfont.ttf") format("truetype");
 	font-weight:normal;
 	font-style:normal
 }
 @font-face {
-	font-family:'DDG_ProximaNova';
+	font-family:"DDG_ProximaNova";
 	src:url("font/ProximaNova-Light-webfont.woff") format("woff"),url("font/ProximaNova-Light-webfont.ttf") format("truetype");
 	font-weight:300;
 	font-style:normal
@@ -14,7 +14,10 @@
 body {
 	padding: 0;
 	margin: 0;
+	color: white;
+	line-height: 1;
 	background-color: #222;
+	font-family: DDG_ProximaNova;
 }
 a {
 	color: white;
@@ -26,43 +29,55 @@ a:visited {
 
 #main-container {
 	list-style-type: none;
-	padding: 16px;
 	margin: 0 auto;
+	padding: 16px;
 	width: 95%;
 }
-
-.list-score {
+.list-sidebox {
 	display: inline-block;
-	height: 48px;
-	width: 80px;
 	border-radius: 6px 0 0 6px;
 	vertical-align: middle;
 	background-color: #333;
+	text-align: center;
+	width: 70px;
+	height: 50px;
+}
+.list-rank {
+	margin: 6px 0 2px 0;
+	font-size: 16pt;
+}
+.list-score {
+	font-size: 12pt;
+}
+
+.list-thumb {
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #222;
+	border-radius: 8px;
+	width: 70px;
+	height: 70px;
 }
 .list-content {
 	display: inline-block;
-	width: 85%;
 	border-radius: 8px;
 	background-color: #333;
 	box-shadow: 0 0 16px -8px black;
 	margin: 8px 0 0 0;
 	padding: 8px;
+	width: 85%;
 }
-.list-thumb {
-	vertical-align: middle;
+.list-info {
 	display: inline-block;
-	width: 70px;
-	height: 70px;
-	background-color: #222;
-	border: 4px solid #222;
-	border-radius: 8px;
+	vertical-align: middle;
+	max-width: 85%;
+	padding: 0 0 0 16px;
 }
 .list-title {
-	display: inline-block;
-	max-width: 85%;
 	font-size: 16pt;
-	padding: 0 0 0 16px;
-	font-family: DDG_ProximaNova;
+}
+.list-domain {
+	font-size: 10pt;
 }
 .list-title:hover {
 	text-decoration: underline;

@@ -1,15 +1,19 @@
-mixin item(score, title, url, thumb)
-	li
-		.list-score= score
-		.list-content
-			a(href=url)
-				img.list-thumb(src=thumb)
-				.list-title= title
+mixin item(index, a)
+	.list-sidebox
+		.list-rank= "#" + (offset + index + 1)
+		.list-score= a.score
+	.list-content
+		a(href=a.url)
+			img.list-thumb(src=a.thumbnail)
+			.list-info
+				.list-title= a.title
+				.list-domain= "("+a.domain+")"
 
 head
 	title reddit
 	link(rel="stylesheet", href="style.css")
 body
 	ul#main-container
-		each i in items
-			+item(i.score, i.title, i.url, i.thumbnail)
+		each values,index in items
+			li
+				+item(index, values)

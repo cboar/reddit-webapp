@@ -15,7 +15,7 @@ body {
 	padding: 0;
 	margin: 0;
 	color: white;
-	line-height: 1;
+	line-height: 1.1;
 	background-color: #222;
 	font-family: DDG_ProximaNova;
 }
@@ -67,7 +67,7 @@ a:visited {
 	padding: 8px;
 	width: 85%;
 }
-.list-info {
+.list-text {
 	display: inline-block;
 	vertical-align: middle;
 	max-width: 85%;
@@ -77,20 +77,20 @@ a:visited {
 	display: inline;
 	font-size: 16pt;
 }
-.list-domain {
-	display: inline;
-	margin-left: 8px;
-	font-size: 10pt;
-	color: #666;
+.list-title:hover {
+	text-decoration: underline;
 }
 .list-flair {
 	display: inline;
 	font-size: 12pt;
 	margin-left: 8px;
-	padding: 2px 8px 2px 8px;
+	padding: 2px 6px 0px 6px;
 	border-radius: 4px;
 	background-color: #555;
 }
-.list-title:hover {
-	text-decoration: underline;
+.list-info {
+	font-size: 12pt;
+	padding-left: 8px;
+	padding-top: 2px;
+	color: #666;
 }
